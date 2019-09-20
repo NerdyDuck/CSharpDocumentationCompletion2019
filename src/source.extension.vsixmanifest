@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="7DF4A810-9DDD-4AFB-A4A0-D2C6D6C0DCA2" Version="1.0.0" Language="en-US" Publisher="Daniel Kopp" />
+        <DisplayName>C# Documentation Completion</DisplayName>
+        <Description xml:space="preserve">Additional Intellisense auto-completion items for C# XML comments.</Description>
+        <License>LICENSE</License>
+        <Icon>Icon.png</Icon>
+        <PreviewImage>Icon.png</PreviewImage>
+        <Tags>xml, comment, cs</Tags>
+        <Preview>true</Preview>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
+    </Installation>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+</PackageManifest>
